@@ -15,6 +15,7 @@
                 font-weight: 400;
                 font-style: normal;
             }
+
             .boxproduto {
                 position: relative;
                 max-width: 300px;
@@ -24,7 +25,10 @@
                 justify-content: space-between;
                 align-items: center;
                 border: 1px solid #eee;
+
+                transition: all 300ms ease-in;
             }
+
             .boxproduto__figure {
                 display: flex;
                 flex-direction: column;
@@ -33,12 +37,14 @@
                 width: 240px;
                 height: 240px;
             }
+
             .boxproduto__relevante2 {
                 color: #333;
                 font-family: Helvetica Neue, Helvetica, sans-serif;
                 text-align: center;
                 font-size: 23px;
             }
+
             .boxproduto__details {
                 position: relative;
                 text-align: left;
@@ -48,18 +54,25 @@
 
                 transition: all 300ms ease;
             }
+
             .boxproduto__summary {
+                position: relative;
                 padding: 0 20px 6px;
                 font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-size: 13px;
                 color: #e8292a;
+
+                transition: all 300ms ease;
             }
+
             .boxproduto__desc {
                 padding: 0 20px 0;
 
                 font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-size: 13px;
                 text-align: left;
+
+                transition: all 300ms ease;
             }
             .boxproduto__final {
                 display: flex;
@@ -80,21 +93,26 @@
                 text-align: left;
                 width: 90%;
             }
+
             .boxproduct__textoForte {
                 font-weight: 900;
                 font-size: 22px;
             }
+
             .boxproduct__textoBold {
                 font-weight: 500;
                 font-size: 14px;
                 padding-right: 2px;
             }
+
             .boxproduct__pricing small {
                 display: block;
             }
+
             .boxproduto__final {
                 padding: 9px 0;
             }
+
             .boxproduto__botao {
                 display: flex;
                 flex-direction: column;
@@ -122,39 +140,39 @@
 
             <article class="boxproduto">
 
-                <figure class="boxproduto__figure">
+                <figure class="boxproduto__figure" tabindex="1">
                     <img class="boxproduto__img" src="mbp13.jpg" alt="MacBook Pro Retina 13 polegadas">
                 </figure>
                 
-                <div class="boxproduto__divisao">
+                <div class="boaxproduto__divisao">
                     <header class"boxproduto__header">
-                        <h2 class="boxproduto__relevante2">
+                        <h2 class="boxproduto__relevante2" tabindex="2">
                             MacBook Pro 13 Polegadas Retina
                         </h2>
                     </header>
                     
-                    <details class="boxproduto__details">
-                        <summary class="boxproduto__summary">Veja mais</summary>
-                        <p class="boxproduto__desc">
+                    <details class="boxproduto__details" tabindex="3">
+                        <summary class="boxproduto__summary" tabindex="5">Veja mais</summary>
+                        <p class="boxproduto__desc" tabindex="5">
                             <em>Retina Display</em> modelo 2016, novo <strong>MacBook</strong> agora com mais processamento
                             8GB de RAM, 128 GB de SSD, tela de alta qualidade ultra HD13,3" 2560 x 1600. Aproveite o melhor preço
                         </p>
                     </details>
                     
-                    <h4 class="boxproduct__pricing">
+                    <h4 class="boxproduct__pricing" tabindex="6">
                         <strong class="boxproduct__textoForte"><b class="boxproduct__textoBold">R$</b>5948,00</strong> <em>à vista</em>
                         <small>10x sem juros de R$594,80</small>
                     </h4>
     
                     <footer class="boxproduto__final">
-                    <h3 class="boxproduto__relevante3">
-                        <a href="/detalhes" role="button" class="boxproduto__botao boxproduto__botao--detalhes">
-                        Mais Detalhes
-                        </a>
-                        <a href="/detalhes" role="button" class="boxproduto__botao boxproduto__botao--comprar">
-                        Comprar
-                        </a>
-                    </h3>  
+                        <h3 class="boxproduto__relevante3" aria-label="botões">
+                            <a href="/detalhes" role="button" class="boxproduto__botao boxproduto__botao--detalhes" tabindex="7">
+                            Mais Detalhes
+                            </a>
+                            <a href="/detalhes" role="button" class="boxproduto__botao boxproduto__botao--comprar" tabindex="8">
+                            Comprar
+                            </a>
+                        </h3>  
                     </footer>
 
                 </div>
