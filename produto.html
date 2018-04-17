@@ -93,6 +93,24 @@
             .boxproduct__pricing small {
                 display: block;
             }
+            
+            .boxproduto__stock {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 26%;
+                padding: 6px;
+                margin-top: 6px;
+                
+                font-size: 11px;
+                white-space: nowrap;
+                text-align: center;
+                
+                background-color: #eee;
+                border-radius: 2px;
+            }
+            
             .boxproduto__final {
                 padding: 9px 0;
             }
@@ -139,7 +157,6 @@
                         <p class="boxproduto__desc" tabindex="6" itemprop="description">
                             <em>Retina Display</em> modelo 2016, novo <strong>MacBook</strong> agora com mais processamento
                             8GB de RAM, 128 GB de SSD, tela de alta qualidade ultra HD13,3" 2560 x 1600. Aproveite o melhor preço
-                             <link itemprop="availability" href="http://schema.org/InStock"/> Em Estoque
                         </p>
                     </details>
                     
@@ -149,6 +166,7 @@
                             <abbr class="boxproduct__textoBold">R$</abbr><span class="boxproduto__valorPreco" itemprop="price" content="5948.00">5948,00</span>
                          </strong> <em>à vista</em>
                         <small>10x sem juros de R$594,80</small>
+                        <small class="boxproduto__stock"><link itemprop="availability" href="http://schema.org/InStock"/>Em Estoque</small>
                     </h4>
     
                     <footer class="boxproduto__final">
