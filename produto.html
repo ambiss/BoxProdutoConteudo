@@ -8,9 +8,7 @@
             img {
                 max-width: 100%;
             }
-
             :focus { outline: none; }
-
             strong, em, cite, small, b, i {
                 font-weight: 400;
                 font-style: normal;
@@ -24,7 +22,6 @@
                 justify-content: space-between;
                 align-items: center;
                 border: 1px solid #eee;
-
                 transition: all 300ms ease-in;
             }
             .boxproduto__figure {
@@ -54,10 +51,11 @@
                 font-family: "Helvetica Neue", Helvetica, sans-serif;
                 font-size: 13px;
                 color: #e8292a;
+                
+                cursor: pointer;
             }
             .boxproduto__desc {
                 padding: 0 20px 0;
-
                 font-family: "Helvetica Neue", Helvetica, sans-serif;
                 font-size: 13px;
                 text-align: left;
@@ -73,7 +71,7 @@
                 height: 60px;
                 width: 100%;
             }
-            .boxproduct__pricing {
+            .boxproduto__pricing {
                 padding: 14px;
                 font-family: "Helvetica Neue", Helvetica, sans-serif;
                 font-weight: 400;
@@ -81,20 +79,40 @@
                 text-align: left;
                 width: 90%;
             }
-            .boxproduct__textoForte {
+            .boxproduto__textoForte {
                 font-weight: 900;
                 font-size: 22px;
             }
-            .boxproduct__textoBold {
+            .boxproduto__Acron {
                 font-weight: 500;
                 font-size: 14px;
                 padding-right: 2px;
             }
-            .boxproduct__pricing small {
+            .boxproduto__parcelamento {
                 display: block;
+            }
+            .boxproduto__id {
+                display: block;
+                text-align: left;
+                font-size: 10.6px;
+                font-weight: 500;
+                padding-top: 6px;
+            }
+            
+            .boxproduto__review {
+                position: absolute;
+                clip: rect(0, 0, 0, 0);
+                display: block;
+                padding: 0 16px 0;
+                
+                color: #333;
+                font-size: 12px;
+                font-family: "Helvetica Neue", Helvetica, sans-serif;
             }
             
             .boxproduto__stock {
+                /*position: absolute;
+    			clip: rect(0, 0, 0, 0);*/
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -131,22 +149,17 @@
             .boxproduto__botao--comprar {
                 background-color: #65d643;
             }
-
         </style>
     </head>
-
     <body>
-
         <section class="displayprodutos">
-
             <article class="boxproduto" itemscope itemtype="http://schema.org/Product">
-
                 <figure class="boxproduto__figure" tabindex="1">
                     <img itemprop="image" class="boxproduto__img" src="mbp13.jpg" alt="MacBook Pro Retina 13 polegadas">
                 </figure>
                 
                 <div class="boaxproduto__divisao">
-                    <header class"boxproduto__header">
+                    <header class="boxproduto__header">
                         <h2 class="boxproduto__relevante2" tabindex="2" itemprop="name">
                             MacBook Pro 13 Polegadas Retina
                         </h2>
@@ -157,15 +170,20 @@
                         <p class="boxproduto__desc" tabindex="6" itemprop="description">
                             <em>Retina Display</em> modelo 2016, novo <strong>MacBook</strong> agora com mais processamento
                             8GB de RAM, 128 GB de SSD, tela de alta qualidade ultra HD13,3" 2560 x 1600. Aproveite o melhor preço
+                            <small class="boxproduto__id">Código: <em itemprop="mpn">925872</em></small>
                         </p>
                     </details>
                     
-                    <h4 itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="boxproduct__pricing" tabindex="7">
-                        <strong class="boxproduct__textoForte">
+                    <p class="boxproduto__review" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <em itemprop="ratingValue">4.4</em> pontos, baseado em <em itemprop="reviewCount">89</em> reviews
+                    </p>
+                    
+                    <h4 itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="boxproduto__pricing" tabindex="7">
+                        <strong class="boxproduto__textoForte">
                             <meta itemprop="priceCurrency" content="BRL" />
-                            <abbr class="boxproduct__textoBold">R$</abbr><span class="boxproduto__valorPreco" itemprop="price" content="5948.00">5948,00</span>
+                            <abbr class="boxproduto__Acron">R$</abbr><span class="boxproduto__valorPreco" itemprop="price" content="5948.00">5948,00</span>
                          </strong> <em>à vista</em>
-                        <small>10x sem juros de R$594,80</small>
+                        <small class="boxproduto__parcelamento">10x sem juros de R$594,80</small>
                         <small class="boxproduto__stock"><link itemprop="availability" href="http://schema.org/InStock"/>Em Estoque</small>
                     </h4>
     
@@ -179,13 +197,8 @@
                             </a>
                         </h3>  
                     </footer>
-
                 </div>
-
             </article>
-
         </section>
-
     </body>
-
 </html>
